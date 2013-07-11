@@ -65,4 +65,7 @@ $benchB = function(){
 };
 
 testBenchmark($benchB);
-?>
+
+//memory test 1
+$obj = new B(A,B,C,D,E);
+echo "Bytes per object:" . sizeofvar($obj);
